@@ -14,7 +14,7 @@
 ## 👥 Thành viên nhóm
 
 | STT | Họ và Tên | MSSV | Nhiệm vụ phụ trách | Github |
-|-----|------------|------|--------------------|--------------------|
+|-----|------------|------|--------------------|-----------------------------|
 | 1 | Trần Kim Ngân | 24521135 |  | [KylnaCBSCRT-CSE](https://github.com/KylnaCBSCRT-CSE) |
 | 2 | Huỳnh Minh Trí| 24521831 |  | [trihuynhmin](https://github.com/trihuynhminh) |
 | 3 | Khương Thành Lên | 24520949|  | [ThanhLen-Hoc-IT](https://github.com/ThanhLen-Hoc-IT) |
