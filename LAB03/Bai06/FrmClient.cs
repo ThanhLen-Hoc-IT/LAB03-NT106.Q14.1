@@ -18,15 +18,15 @@ namespace Bai06
             public string Sender { get; set; }
             public string FileName { get; set; }
             public string Base64Data { get; set; }
-            public string ChatTarget { get; set; } // BROADCAST or recipient name
+            public string ChatTarget { get; set; } // BROADCAST or tên chính xác
         }
 
         // Dictionary lưu trữ file đang chờ tải xuống
         private Dictionary<Guid, ReceivedFile> pendingFiles = new Dictionary<Guid, ReceivedFile>();
 
-        private string pendingFilePath = null; // Temporary path of selected file
-        private string pendingFileName = null; // Temporary name of selected file
-        private string pendingMsgType = null;  // Temporary message type
+        private string pendingFilePath = null; // Đường dẫn file tạm thời
+        private string pendingFileName = null; // Tên file tạm thời
+        private string pendingMsgType = null;  // Loại file tạm thời
 
         public FrmClient()
         {
@@ -114,7 +114,7 @@ namespace Bai06
         private void SaveMessageToHistory(string chatTarget, string sender, string data, Color color, bool isSelfMessage = false, Guid? fileId = null)
         {
             RichTextBox rtb = GetChatHistoryBox(chatTarget);
-            string displaySender = isSelfMessage ? "Bạn" : sender;
+            string displaySender = isSelfMessage ? "Me" : sender;
 
             // Thêm ID file vào log để kích hoạt tải xuống khi nhấp chuột
             string fileTag = (fileId.HasValue) ? $" [FileID:{fileId.Value}]" : "";
