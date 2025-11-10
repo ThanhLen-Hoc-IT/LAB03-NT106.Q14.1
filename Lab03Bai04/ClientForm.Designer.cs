@@ -1,6 +1,6 @@
 ﻿namespace Lab03
 {
-    partial class Lab03Bai04
+    partial class ClientForm
     {
         /// <summary>
         /// Required designer variable.
@@ -89,6 +89,7 @@
             this.grpCustomer.TabIndex = 0;
             this.grpCustomer.TabStop = false;
             this.grpCustomer.Text = "Thông tin khách hàng";
+            this.grpCustomer.Enter += new System.EventHandler(this.grpCustomer_Enter);
             // 
             // btnConnect
             // 
