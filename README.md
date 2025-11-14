@@ -15,8 +15,10 @@
 
 | STT | Họ và Tên | MSSV | Nhiệm vụ phụ trách | Github |
 |-----|------------|------|--------------------|-----------------------------|
-| 1 | Trần Kim Ngân | 24521135 |  | [KylnaCBSCRT-CSE](https://github.com/KylnaCBSCRT-CSE) |
-| 2 | Huỳnh Minh Trí| 24521831 |  | [trihuynhminh](https://github.com/trihuynhminh) |
-| 3 | Khương Thành Lên | 24520949|  | [ThanhLen-Hoc-IT](https://github.com/ThanhLen-Hoc-IT) |
+| 1 | Trần Kim Ngân | 24521135 |Bài 3,4  | [KylnaCBSCRT-CSE](https://github.com/KylnaCBSCRT-CSE) |
+| 2 | Huỳnh Minh Trí| 24521831 |Bài 5| [trihuynhminh](https://github.com/trihuynhminh) |
+| 3 | Khương Thành Lên | 24520949|Bài 1,2,6  | [ThanhLen-Hoc-IT](https://github.com/ThanhLen-Hoc-IT) |
 
 ---
+
+Link repo bài 5: https://github.com/trihuynhminh/l3b5
