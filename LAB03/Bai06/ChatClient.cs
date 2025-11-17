@@ -26,7 +26,7 @@ namespace Bai06
             ChatHistory = new Dictionary<string, RichTextBox>();
         }
 
-        public bool Connect(string username, string serverIp = "127.0.0.1", int port = 8888)
+        public bool Connect(string username, string serverIp = "172.20.10.6", int port = 8888)
         {
             try
             {

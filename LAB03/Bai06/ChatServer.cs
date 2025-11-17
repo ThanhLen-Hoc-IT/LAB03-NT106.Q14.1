@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Net.Sockets;
-using System.Threading.Tasks;
 using System.Text.Json;
-using System.Linq;
+using System.Threading.Tasks;
 
 namespace Bai06
 {
@@ -103,7 +103,7 @@ namespace Bai06
                                     SendPrivateMessage(msg);
                                 }
                                 break;
-                           
+
                             case "STATUS_LEAVE":
                                 Broadcast(msg, clientUsername, true); // Broadcast rời đi
                                 return;

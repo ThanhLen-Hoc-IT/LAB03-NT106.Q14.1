@@ -22,7 +22,7 @@ namespace Lab03Bai03
         {
             try
             {
-                IPAddress ip = IPAddress.Parse("127.0.0.1");
+                IPAddress ip = IPAddress.Parse("172.20.10.6");
                 IPEndPoint endPoint = new IPEndPoint(ip, 8080);
 
                 tcpClient = new TcpClient();
@@ -53,7 +53,7 @@ namespace Lab03Bai03
                 string text = txtInput.Text;
                 if (string.IsNullOrWhiteSpace(text)) return;
 
-                byte[] data = Encoding.ASCII.GetBytes(text + "\n");
+                byte[] data = Encoding.UTF8.GetBytes(text + "\n");
                 ns.Write(data, 0, data.Length);
                 Log("Sent: " + text);
                 txtInput.Clear();
@@ -101,6 +101,8 @@ namespace Lab03Bai03
             Disconnect();
             base.OnFormClosing(e);
         }
+
+       
     }
 }
 

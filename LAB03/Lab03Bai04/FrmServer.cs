@@ -16,7 +16,7 @@ namespace Lab03
         private List<TcpClient> clients = new List<TcpClient>();
         private bool isRunning = false;
         private readonly int PORT = 5000;
-        private readonly IPAddress IP = IPAddress.Parse("127.0.0.1");
+        private readonly IPAddress IP = IPAddress.Any;
 
         // KHÔNG KHAI BÁO CÁC CONTROLS Ở ĐÂY (txtLog, btnStart, btnStop),
         // Vì chúng đã được khai báo trong FrmServer.Designer.cs (để tránh lỗi trùng lặp CS0102/CS0229).
@@ -44,7 +44,7 @@ namespace Lab03
                     listenThread.Start();
 
                     isRunning = true;
-                    WriteLog($"✅ Server đang chạy tại {IP}:{PORT}");
+                    WriteLog($"✅ Server đang chạy tại {PORT}");
                     btnStart.Enabled = false;
                     btnStop.Enabled = true;
                 }

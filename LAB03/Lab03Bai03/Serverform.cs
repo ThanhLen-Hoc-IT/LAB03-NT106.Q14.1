@@ -35,11 +35,11 @@ namespace Lab03Bai03
         {
             try
             {
-                IPAddress ip = IPAddress.Parse("127.0.0.1");
+                IPAddress ip = IPAddress.Any;
                 listener = new TcpListener(ip, 8080);
                 listener.Start();
                 running = true;
-                UpdateLog("Server started! Listening on 127.0.0.1:8080");
+                UpdateLog("Server started! Listening on 8080");
 
                 while (running)
                 {
@@ -75,7 +75,7 @@ namespace Lab03Bai03
 
                 while ((bytesRead = ns.Read(buffer, 0, buffer.Length)) > 0)
                 {
-                    string msg = Encoding.ASCII.GetString(buffer, 0, bytesRead).Trim();
+                    string msg = Encoding.UTF8.GetString(buffer, 0, bytesRead).Trim();
                     string from = ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString();
                     UpdateLog($"From {from}: {msg}");
                 }

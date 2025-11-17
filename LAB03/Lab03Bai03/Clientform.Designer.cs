@@ -44,7 +44,7 @@ namespace Lab03Bai03
             // 
             this.txtInput.Location = new System.Drawing.Point(12, 182);
             this.txtInput.Name = "txtInput";
-            this.txtInput.Size = new System.Drawing.Size(260, 26);
+            this.txtInput.Size = new System.Drawing.Size(260, 22);
             this.txtInput.TabIndex = 1;
             // 
             // btnConnect
