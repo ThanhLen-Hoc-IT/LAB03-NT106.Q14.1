@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Net.Sockets;
 using System.Net;
+using System.Net.Sockets;
 using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace Bai01
 {
@@ -21,7 +15,7 @@ namespace Bai01
         public FrmUDPServer()
         {
             InitializeComponent();
-            
+
         }
 
         private void btnListen_Click(object sender, EventArgs e)
@@ -41,7 +35,7 @@ namespace Bai01
         {
             try
             {
-                int port = int.Parse(txtPort.Text) ;
+                int port = int.Parse(txtPort.Text);
                 udpClient = new UdpClient(port);
 
                 while (isRunning)
@@ -52,7 +46,7 @@ namespace Bai01
                     string ip = RemoteIpEndPoint.Address.ToString();
 
                     //Viết hàm InfoMessage để hiển thị thông điệp lên List View
-                    InfoMessage(ip,message);
+                    InfoMessage(ip, message);
                 }
             }
             catch (SocketException ex)
@@ -92,9 +86,9 @@ namespace Bai01
         {
             CheckForIllegalCrossThreadCalls = false; // cho phép update UI từ thread khác
 
-            lvReceivedMessage.View = View.Details;          
-            lvReceivedMessage.FullRowSelect = true;         
-            lvReceivedMessage.GridLines = true;             
+            lvReceivedMessage.View = View.Details;
+            lvReceivedMessage.FullRowSelect = true;
+            lvReceivedMessage.GridLines = true;
             lvReceivedMessage.Columns.Add("Time", 80);
             lvReceivedMessage.Columns.Add("IP", 120);
             lvReceivedMessage.Columns.Add("Message", 300);

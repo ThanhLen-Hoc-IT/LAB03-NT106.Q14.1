@@ -38,7 +38,7 @@ namespace Bai02
                 );
 
                 // 2. Bind IP và port
-                IPEndPoint ipepServer = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8080);
+                IPEndPoint ipepServer = new IPEndPoint(IPAddress.Any, 8080);
                 listenerSocket.Bind(ipepServer);
 
                 // 3. Lắng nghe
