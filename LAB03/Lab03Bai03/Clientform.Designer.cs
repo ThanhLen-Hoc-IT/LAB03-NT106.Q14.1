@@ -44,7 +44,7 @@ namespace Lab03Bai03
             // 
             this.txtInput.Location = new System.Drawing.Point(12, 182);
             this.txtInput.Name = "txtInput";
-            this.txtInput.Size = new System.Drawing.Size(260, 22);
+            this.txtInput.Size = new System.Drawing.Size(260, 26);
             this.txtInput.TabIndex = 1;
             // 
             // btnConnect
@@ -88,6 +88,7 @@ namespace Lab03Bai03
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "ClientForm";
             this.Text = "Client";
+            this.Load += new System.EventHandler(this.ClientForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

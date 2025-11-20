@@ -22,7 +22,7 @@ namespace Lab03Bai03
         {
             try
             {
-                IPAddress ip = IPAddress.Parse("172.20.10.6");
+                IPAddress ip = IPAddress.Parse("127.0.0.1");
                 IPEndPoint endPoint = new IPEndPoint(ip, 8080);
 
                 tcpClient = new TcpClient();
@@ -102,7 +102,10 @@ namespace Lab03Bai03
             base.OnFormClosing(e);
         }
 
-       
+        private void ClientForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
