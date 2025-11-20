@@ -53,7 +53,7 @@ namespace Lab03Bai03
                 string text = txtInput.Text;
                 if (string.IsNullOrWhiteSpace(text)) return;
 
-                byte[] data = Encoding.ASCII.GetBytes(text + "\n");
+                byte[] data = Encoding.UTF8.GetBytes(text + "\n");
                 ns.Write(data, 0, data.Length);
                 Log("Sent: " + text);
                 txtInput.Clear();
@@ -100,6 +100,11 @@ namespace Lab03Bai03
         {
             Disconnect();
             base.OnFormClosing(e);
+        }
+
+        private void ClientForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
